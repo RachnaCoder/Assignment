@@ -7,9 +7,15 @@ export const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([
     { id: 1, name: "Neural Link Processor", price: 2500, category: "Electronics", stock: 12, description: "Advanced AI chip" },
     { id: 2, name: "Bio-Sensor Watch", price: 199, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
-    { id: 2, name: "Bio-Sensor Watch", price: 199, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
-    { id: 2, name: "Bio-Sensor Watch", price: 199, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
-    { id: 2, name: "Bio-Sensor Watch", price: 199, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 3, name: "Television", price: 20000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 4, name: "Washing Machine", price: 8000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
+    { id: 5, name: "Vaccum Cleaner", price: 4000, category: "Gadgets", stock: 45, description: "Tracks vitals in real-time" },
 
   ]);
   const [viewMode, setViewMode] = useState('grid'); 

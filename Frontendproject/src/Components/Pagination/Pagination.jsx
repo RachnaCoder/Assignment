@@ -1,30 +1,27 @@
-
 import React from 'react';
 import './Pagination.css';
 
 const Pagination = ({ currentPage, maxPage, onNext, onPrev }) => {
-  if (maxPage <= 1) return null; 
-
   return (
     <div className="pagination-container">
       <button 
-        onClick={onPrev} 
+        className="pagination-btn"
+        onClick={onPrev}
         disabled={currentPage === 1}
-        className="pag-btn"
       >
-        Previous
+        ← Previous
       </button>
-      
-      <span className="page-info">
-        Page <strong>{currentPage}</strong> of {maxPage}
+
+      <span className="pagination-info">
+        Page <strong>{currentPage}</strong> of <strong>{maxPage}</strong>
       </span>
 
       <button 
-        onClick={onNext} 
+        className="pagination-btn primary"
+        onClick={onNext}
         disabled={currentPage === maxPage}
-        className="pag-btn"
       >
-        Next
+        Next →
       </button>
     </div>
   );

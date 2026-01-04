@@ -1,6 +1,7 @@
 import React from "react";
 import { useProducts } from "../../Context/ProductContext";
 import "./SearchBar.css";
+import { IoMdSearch } from "react-icons/io";
 
 const SearchBar = () => {
   const { searchTerm, setSearchTerm } = useProducts();
@@ -8,7 +9,9 @@ const SearchBar = () => {
   return (
     <div className="search-wrapper">
       <div className="search-container">
-        <span className="search-icon">🔍</span>
+        <span className="search-icon">
+          <IoMdSearch/>
+        </span>
         <input
           type="text"
           placeholder="Search products by name..."
