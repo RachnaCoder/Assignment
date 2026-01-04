@@ -1,0 +1,77 @@
+/* Wrapper - spacing from header */
+.view-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 40px 30px 20px auto; /* space from header */
+  width: fit-content;
+}
+
+/* Label text */
+.view-text {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Toggle background */
+.view-toggle {
+  position: relative;
+  width: 90px;
+  height: 38px;
+  background: #e3f2fd;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Active (List view) */
+.view-toggle.active {
+  background: #bbdefb;
+}
+
+/* Thumb */
+.toggle-thumb {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: #1976d2;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Move thumb */
+.view-toggle.active .toggle-thumb {
+  transform: translateX(52px);
+}
+
+/* Icons */
+.toggle-icon {
+  z-index: 1;
+  font-size: 16px;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+/* Hover */
+.view-toggle:hover {
+  box-shadow: 0 6px 14px rgba(25, 118, 210, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .view-text {
+    display: none;
+  }
+
+  .view-toggle-wrapper {
+    margin-right: 16px;
+  }
+}

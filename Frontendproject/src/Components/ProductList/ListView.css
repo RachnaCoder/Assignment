@@ -1,0 +1,118 @@
+/* Wrapper */
+.list-view-wrapper {
+  padding: 20px 30px;
+}
+
+/* Table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.product-table thead {
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+}
+
+.product-table th {
+  padding: 14px 16px;
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Body rows */
+.product-table tbody tr {
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Hover */
+.product-table tbody tr:hover {
+  background-color: #e3f2fd;
+}
+
+/* Cells */
+.product-table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* Product name */
+.product-name {
+  font-weight: 600;
+}
+
+/* Category */
+.category-pill {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Price */
+.price {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+/* Stock */
+.stock-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.stock-badge.normal {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.stock-badge.low {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #0d47a1;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .list-view-wrapper {
+    padding: 16px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 12px;
+  }
+}
